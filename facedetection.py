@@ -40,6 +40,7 @@ class VideoCapture:
             # length of faces
             # validate no faces
             if len(faces) == 0:
+                #cv2.imshow('live!', frame)
                 pass
 
             # if a face is detected, faces return 1 or more depending on the amount of faces detected
@@ -51,7 +52,7 @@ class VideoCapture:
                 for (x, y, w, h) in faces:
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-                cv2.imwrite(OUTPUT_PATH + frameNumber + '.png', frame)
+                #cv2.imwrite(OUTPUT_PATH + frameNumber + '.png', frame)
                 #live!
                 cv2.imshow('live!', frame)
 
