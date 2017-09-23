@@ -1,4 +1,4 @@
-import cv2, os
+import cv2 as cv2, os
 import argparse
 
 OUTPUT_PATH = 'capture/'
