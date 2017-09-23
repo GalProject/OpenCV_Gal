@@ -51,6 +51,7 @@ class VideoCapture:
                 # Graph the face and drew the rectangle around it (for its because mayb we will have multiple faces)
                 for (x, y, w, h) in faces:
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+                    #cv2.circle(frame, (x, y), 63, (0, 255, 0), 2)
 
                 #cv2.imwrite(OUTPUT_PATH + frameNumber + '.png', frame)
                 #live!
