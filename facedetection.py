@@ -52,6 +52,7 @@ class VideoCapture:
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
                 cv2.imwrite(OUTPUT_PATH + frameNumber + '.png', frame)
+                cv2.imshow('live!', frame)
 
             # increment count so we get a unique name for each frame
             self.count += 1
